@@ -14,7 +14,7 @@ window.processAuth = function(registering)
 		return;
 	}
 		
-	if( registering )
+	if( registering == false )
 	{
 		mp.invoke("trigger", "login", $("#auth #login").val(), $("#auth #password").val());
 	}

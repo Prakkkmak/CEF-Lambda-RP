@@ -20,14 +20,14 @@ mp.events.add(
 		// verify it here (length etc) *
 		// * * * * * * * * * * * * * * *
 		
-		mp.events.callRemote("playerRegister", email, login, pass);
+		mp.events.callRemote("playerRegister", mail, login, pass);
 	},
 	
 	"authReport": (wasSuccessful) =>
 	{
-		if(wasSuccessful)
+		if(wasSuccessful == true)
 			mp.gui.execute("$('#auth').fadeOut('fast'); mp.invoke('focus', false);");
 		else
 			mp.gui.execute("window.insertMessageToChat('You have entered wrong login/pass!');");
-	},
+	}
 });
