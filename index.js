@@ -2,7 +2,7 @@ mp.events.add(
 {
 	"guiStarted": () =>
 	{
-		mp.gui.execute("window.location = 'package://html/index.html'");
+		mp.gui.execute("window.location = 'package://bugreport/index.html'");
 	},
 	
 	"login": (login, pass) =>
