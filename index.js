@@ -11,7 +11,7 @@ mp.events.add(
 		// verify it here (length etc) *
 		// * * * * * * * * * * * * * * *
 		
-		mp.events.callRemote("playerLogin", login, pass);
+		mp.events.callRemote("playerLogin", login, pass); // Appelel a di
 	},
 	
 	"register": (mail, login, pass) =>
